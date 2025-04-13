@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Quiz</h1>
+    
+    <div id="quiz-container">
+      <div id="quiz-header">
+        <div class="quiz-info">
+          <span id="question-counter">Question 1 of 5</span>
+          <span id="score-display">Score: 0</span>
+        </div>
+        <div class="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+      </div>
+      
+      <h2 id="question-text">Question text will appear here</h2>
+      
+      <div id="options-container">
+        <!-- Options will be inserted here by JavaScript -->
+      </div>
+      
+      <div id="feedback-container" class="hidden">
+        <!-- Feedback will be inserted here by JavaScript -->
+      </div>
+      
+      <div class="button-container">
+        <button id="submit-btn">Submit Answer</button>
+        <button id="next-btn" class="hidden">Next Question</button>
+      </div>
+    </div>
+    
+    <div id="results-container" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <div id="final-score">Your Score: 0 out of 5</div>
+      <p id="result-message">Result message will appear here</p>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
